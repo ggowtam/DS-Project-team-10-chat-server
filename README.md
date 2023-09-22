@@ -9,30 +9,29 @@ Methods:
          // method done by Gowtam
 
 Stop( ): Validating the keepGoing and use try catch to stop server connection.
-//method done my Gowtam
+
 Display( ): Display event to the console.
-//method done by sharanya
+
 
 sendMessage( ): This method is used to send messages across sever and clients connected to the server.
-//method done by Sharanya
 
 Remove( ): When the client uses LEAVE the remove method finds the client id
  & disconnects the client from the server & sends message to other clients as 
 well that a Client has left.
-//method done by Yoshita
+
 Close( ):  Closes the socket connection and stream i/p , o/p.
-//method done by Sharanya
+
 writeMsg( ) : A string message is sent if the client is still connected. 
 If any error occurs this doesn’t abort the server and client connection but 
 informs user. This is done using try and catch block.
-//method done by Yoshita
+
 
 serverClose( ): Close the server connection using socket with parameters 
 as localhost and port.
-//method done by Sharanya
+
 clientClose( ): The for loop is used to traverse the array list of clients and close()
  is used to close all the clients connected to the server.
-//method done by Sharanya
+
 
 Client: The client constructor is set to server, port, username.
 Methods:
@@ -42,19 +41,19 @@ and displays Error message and a message connection accepted if its
 established successfully. It also creates a two way data stream to input and 
 output data from server. ListenFromServer creates a thread and start() is used to 
 type our username to join.
-//method done by Yoshita
+
 
 sendMessage( ) : Sends message to server using stream output object.
-//method done by Gowtam
+
 
 Disconnect( ): Close the input and output streams.
-//method done by Yoshita
+
 The client main method uses infinite loop to get input from user and executes
  the message type LEAVE, SHUTDOWN, SHUTDOWNALL depending on 
 the user input.
 The class ListenFromServer extends thread class and runs method run() to read
  the input message from server.
-//method done by Sharanya, Yoshita, Gowtam
+
 
 ChatMessage:
 The class ChatMessage implements Serializable interface so that an object can be serialized and convert its state back to copy of that object.
